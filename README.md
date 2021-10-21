@@ -14,3 +14,5 @@ response = requests.get('http://localhost:4000/channels/mychannel/chaincodes/fab
 data = response.json()
 df = json_normalize(data)
 print(df)
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzQ4Mjk3NTYsInVzZXJuYW1lIjoiRXRpZW5uZVMiLCJvcmdOYW1lIjoiT3JnMSIsImlhdCI6MTYzNDc5Mzc1Nn0.ZMtE9MAJnSNPlWLnR749OJ2YNx3cEbEHzT7VVUlND9w
