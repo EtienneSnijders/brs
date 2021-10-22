@@ -1,0 +1,164 @@
+body 
+    {
+        color: black;
+        margin-top: -8px;
+        margin-left: -8px;
+        margin-right: -8px;
+        background-color: #FEF5ED;
+    }
+
+    /* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #99A799;
+    padding: 15px 20px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header img {
+        height: 70px;
+        width: 70px;
+        padding-top: -500px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    padding-left: 20px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #D3E4CD;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: #D3E4CD;
+    color: black;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+    padding-top: 15px;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+   /* Balans opmaak */
+  .balans {
+    background-color: #FEF5ED;
+    font-size: large;
+    padding: 15px 20px;
+  }
+
+  .balans-left p {
+    color:  #99A799;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .balans-center p {
+    color:  #BCCC9A;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .balans-right p {
+    color: #575c79;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  #container {
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: space-between; /* switched from default (flex-start, see below) */
+    background-color: #FEF5ED;
+    text-align: center;
+  }
+  #container > div {
+    width: 300px;
+    height: 100px;
+    margin-left: 15px;
+  }
+
+   .transacties {
+    height: 80px;
+    color: rgb(3, 15, 54);
+    background-color: #ADC2A9;
+    margin-top: -25px;
+    margin-left: 3px;
+ }
+
+ .transacties p {
+    font-size: 25px;
+    color: rgb(3, 15, 54);
+    text-align: Center;
+    margin-left: 40px;
+    padding-top: 25px;
+    font-weight: bold;
+ }
+  
+ .table {
+    margin-top: 20px;
+ }
+
+ table.data {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+ } 
+
+ .data td, .data th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold; 
+ }
+
+ .data tr:nth-child(even){background-color: #D3E4CD ;}
+
+ .data tr:hover {background-color: #ddd;}
+
+ .data th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #99A799;
+    color: black;
+    font-weight: bold;
+}
+
+
+

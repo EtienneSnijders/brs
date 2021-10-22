@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}
+    Dashboard Blockchain4Prosumers
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock %}
+{% block content %}
+<div class="header">
+  <meta http-equiv="refresh" content="30" >
+    <img src="https://static.thenounproject.com/png/1871261-200.png">
+    <div class="header-right">
+      <a class="active" href="#home">Dashboard</a>
+
+    </div>
+  </div>
+
+  <div id="container">
+    <div class="balans-left"><p>Balance <br>€ {{totalCost|round(2, 'common')}} </p></div>
+    <div class="balans-center"><p>Total kWh sold <br> {{geleverdeEnergy|round(2, 'common')}}</p></div>
+    <div class="balans-right"><p>Average price kWh <br>€ {{ (avgprice) }}
+      </p></div>
+  </div>
+
+    <div class="transacties">
+        <p>Transaction history</p>
+    </div>
+    <div class="table">
+      {% for table in tables %}
+           {{ table|safe }}
+       {% endfor %}
+   </div>
+{% endblock %}
